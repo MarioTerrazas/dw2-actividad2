@@ -1,0 +1,177 @@
+/* Establece estilos básicos para todos los elementos */
+* {
+  padding: 0%;
+  margin: 0%;
+  font-size: 16px;
+  text-align: justify; /* Justifica el texto */
+}
+
+/* Estilos para el jumbotron */
+.jumbotron-fluid {
+  background: linear-gradient(70deg, #fca311 50%, rgba(0, 0, 0, 0.95) 100%); /* Degradado de naranja a negro */
+  color: white; /* Texto blanco */
+}
+
+/* Estilos para las alertas */
+.alert {
+  text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para las migas de pan (breadcrumb) */
+.bread {
+  padding: .5em; /* Espaciado interno */
+}
+
+/* Estilos para los enlaces dentro de las migas de pan */
+.bread a {
+  text-decoration: none; /* Quita la decoración de subrayado */
+  color: gray; /* Color del texto gris */
+}
+
+/* Estilos para las imágenes dentro del carousel */
+.carousel-inner img {
+  border-radius: 2%; /* Bordes redondeados */
+}
+
+/* Estilos para el diseño de columnas */
+.colR {
+  width: 100%;
+}
+.colR .colP {
+  width: 33%; /* Ancho de cada columna */
+  padding: 0% 1em; /* Espaciado interno */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .colR .colP {
+    padding: 0% .5em; /* Espaciado interno reducido */
+  }
+  .colR .colP h {
+    font-size: 1em; /* Tamaño de fuente reducido */
+  }
+  .colR .colP p {
+    font-size: .8em; /* Tamaño de fuente reducido */
+  }
+  .colR .colP ul li {
+    font-size: .8em; /* Tamaño de fuente reducido */
+  }
+}
+
+/* Estilos para las tarjetas */
+.card {
+  position: relative;
+  width: 25%; /* Ancho de la tarjeta */
+  margin: 1em 0%; /* Margen superior e inferior */
+  padding: 0.5em 0.5em; /* Espaciado interno */
+}
+.card .card-body {
+  height: 100%; /* Altura de la tarjeta */
+}
+.card .card-body a {
+  position: absolute;
+  width: 80%;
+  bottom: 0%;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .card {
+    width: 50%; /* Ancho de la tarjeta reducido */
+  }
+  .card .card-body p {
+    font-size: 0.8em; /* Tamaño de fuente reducido */
+    text-align: justify; /* Justifica el texto */
+  }
+}
+
+/* Estilos para el pie de página */
+footer {
+  padding: 1em; /* Espaciado interno */
+  border-radius: .3em;
+  background: #fca311; /* Fondo naranja */
+  background: linear-gradient(70deg, #fca311 50%, rgba(0, 0, 0, 0.95) 100%); /* Degradado */
+}
+footer a {
+  text-decoration: none; /* Quita la decoración de subrayado */
+  color: white; /* Texto blanco */
+}
+
+/* Estilos para el formulario */
+.formulario {
+  padding-bottom: 2em; /* Espaciado inferior */
+}
+
+/* Estilos para el espacio superior */
+.spacebar {
+  padding-top: 5em; /* Espaciado superior */
+}
+
+/* Estilos para los íconos dentro de las tablas */
+table i {
+  color: #fca311; /* Color naranja */
+}
+
+/* Estilos para el botón de información */
+#btn-inf {
+  position: fixed; /* Posicionamiento fijo */
+  bottom: 18%; /* Distancia desde la parte inferior */
+  right: .5%; /* Distancia desde la derecha */
+}
+#btn-inf .btn-info {
+  width: 3em; /* Ancho del botón */
+  height: 3em; /* Altura del botón */
+  border-radius: 40%; /* Bordes redondeados */
+  text-align: center; /* Alinea el texto al centro */
+}
+#btn-inf .btn-info i {
+  font-size: 2em; /* Tamaño de fuente del ícono */
+  text-align: justify; /* Justifica el texto */
+}
+#btn-inf .btn-info:hover {
+  background: brown; /* Fondo marrón al pasar el mouse */
+  color: white; /* Texto blanco */
+}
+
+/*
+Aqui coloque el estilo de la tabla de la tabla del formulario
+de registro de los clientes.
+Es un buen stilos para la tabla de registros */
+.tabla-registros {
+  width: 100%; /* Ancho de la tabla */
+  border-collapse: collapse; /* Colapsa los bordes de la tabla */
+  margin-top: 2em; /* Margen superior */
+}
+
+.tabla-registros th,
+.tabla-registros td {
+  padding: 0.5em; /* Espaciado interno */
+  border: 1px solid #ddd; /* Borde de 1px sólido */
+}
+
+.tabla-registros th {
+  background-color: #fca311; /* Fondo naranja */
+  color: white; /* Texto blanco */
+  font-weight: bold; /* Negrita */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.tabla-registros tbody tr:nth-child(even) {
+  background-color: #f0f0f0; /* Fondo gris claro para filas pares */
+}
+
+.tabla-registros tbody tr:hover {
+  background-color: #ffc107; /* Fondo amarillo al pasar el mouse */
+}
+
+.tabla-registros td button {
+  padding: 0.25em 0.5em; /* Espaciado interno del botón */
+  border: none; /* Sin borde */
+  background-color: #007bff; /* Fondo azul */
+  color: white; /* Texto blanco */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.tabla-registros td button:hover {
+  background-color: #0056b3; /* Fondo azul oscuro al pasar el mouse */
+}

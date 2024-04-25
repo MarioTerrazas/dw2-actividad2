@@ -1,0 +1,133 @@
+/* Establece estilos básicos para todos los elementos */
+*{
+    padding: 0%;
+    margin: 0%;
+    font-size: 16px;
+}
+
+/* Estilos para el jumbotron */
+.jumbotron-fluid{
+    background-color: #14213D; /* Fondo azul oscuro */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+/* Estilos para las alertas */
+.alert{
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para las migas de pan (breadcrumb) */
+.bread{
+    padding: .5em; /* Espaciado interno */
+}
+
+/* Estilos para los enlaces dentro de las migas de pan */
+.bread a{
+    text-decoration: none; /* Quita la decoración de subrayado */
+    color: gray; /* Color del texto gris */
+}
+
+/* Estilos para las imágenes dentro del carousel */
+.carousel-inner img{
+    border-radius: 2%; /* Bordes redondeados */
+}
+
+/* Estilos para el diseño de columnas */
+.colR{
+    width: 100%;
+}
+.colR .colP{
+    width: 33%; /* Ancho de cada columna */
+    padding: 0% 1em; /* Espaciado interno */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media(max-width:600px)
+{   
+    .colR .colP{
+        padding: 0% .5em; /* Espaciado interno reducido */
+    }
+    .colR .colP h{
+        font-size: 1em; /* Tamaño de fuente reducido */
+    }
+    .colR .colP p{
+        font-size: .8em; /* Tamaño de fuente reducido */
+    }
+    .colR .colP ul li{
+        font-size: .8em; /* Tamaño de fuente reducido */
+    }
+}
+
+/* Estilos para las tarjetas */
+.card{
+    position: relative;
+    width: 25%; /* Ancho de la tarjeta */
+    margin: 1em 0%; /* Margen superior e inferior */
+    padding: .5em.5em; /* Espaciado interno */
+}
+.card .card-body{
+    height: 100%; /* Altura de la tarjeta */
+}
+.card .card-body a{
+    position: absolute;
+    width: 80%;
+    bottom: 0%;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media(max-width:600px)
+{  
+    .card{
+        width: 50%; /* Ancho de la tarjeta reducido */
+    }
+    .card .card-body p{
+        font-size: .8em; /* Tamaño de fuente reducido */
+    }
+}
+
+/* Estilos para el pie de página */
+footer{
+    padding: 1em; /* Espaciado interno */
+    border-radius: .3em; /* Bordes redondeados */
+    background: rgb(252,163,17); /* Fondo naranja */
+    background: linear-gradient(90deg, rgba(252,163,17,1) 050%, rgba(0,0,0,.95) 100%); /* Degradado */
+}
+footer a{
+    text-decoration: none; /* Quita la decoración de subrayado */
+    color: white; /* Texto blanco */
+}
+
+/* Estilos para el formulario */
+.formulario{
+    padding-bottom: 2em; /* Espaciado inferior */
+}
+
+/* Estilos para el espacio superior */
+.spacebar{
+    padding-top: 5em; /* Espaciado superior */
+}
+
+/* Estilos para los íconos dentro de las tablas */
+table i{
+    color:rgba(252,163,17,1); /* Color naranja */
+}
+
+/* Estilos para el botón de información */
+#btn-inf{
+    position:fixed; /* Posicionamiento fijo */
+    bottom: 18%; /* Distancia desde la parte inferior */
+    right: .5%; /* Distancia desde la derecha */
+}
+#btn-inf .btn-info{
+    width: 3em; /* Ancho del botón */
+    height:3em; /* Altura del botón */
+    border-radius: 40%; /* Bordes redondeados */
+    text-align: center; /* Alinea el texto al centro */
+}
+#btn-inf .btn-info i{
+    font-size: 2em; /* Tamaño de fuente del ícono */
+}
+#btn-inf .btn-info:hover{
+    background: brown; /* Fondo marrón al pasar el mouse */
+    color: whitesmoke; /* Texto blanco al pasar el mouse */
+}

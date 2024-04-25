@@ -1,0 +1,155 @@
+// Definición de variables
+$yellow: linear-gradient(70deg, rgba(252,163,17,1) 050%, rgba(0,0,0,.95) 100%);
+$letrablanca: white;
+
+// Definición de mixins
+@mixin tamaño($alto, $ancho) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin fuente($px) {
+    font-size: $px;
+    text-align: justify;
+}
+
+// Estilos generales para todos los elementos
+* {
+    padding: 0%;
+    margin: 0%;
+    @include fuente(16px);
+}
+
+// Estilos para el jumbotron
+.jumbotron-fluid {
+    background: $yellow; // Fondo amarillo definido por variable
+    color: $letrablanca; // Color de texto definido por variable
+}
+
+// Estilos para las alertas
+.alert {
+    text-align: center; // Alineación del texto al centro
+}
+
+// Estilos para las migas de pan
+.bread {
+    padding: .5em; // Espaciado interno
+}
+
+// Estilos para los enlaces dentro de las migas de pan
+.bread a {
+    text-decoration: none; // Quita la decoración de subrayado
+    color: gray; // Color del texto gris
+}
+
+// Estilos para las imágenes dentro del carousel
+.carousel-inner img {
+    border-radius: 2%; // Bordes redondeados
+}
+
+// Estilos para el diseño de columnas
+.colR {
+    width: 100%;
+}
+
+.colR .colP {
+    width: 33%; // Ancho de las columnas
+    padding: 0% 1em; // Espaciado interno
+}
+
+// Estilos responsivos para pantallas pequeñas
+@media(max-width:600px) {
+    .colR .colP {
+        padding: 0% .5em; // Espaciado interno reducido
+    }
+
+    .colR .colP h {
+        font-size: 1em; // Tamaño de fuente reducido
+    }
+
+    .colR .colP p {
+        font-size: .8em; // Tamaño de fuente reducido
+    }
+
+    .colR .colP ul li {
+        font-size: .8em; // Tamaño de fuente reducido
+    }
+}
+
+// Estilos para las tarjetas
+.card {
+    position: relative;
+    width: 25%; // Ancho de las tarjetas
+    margin: 1em 0%;
+    padding: .5em .5em; // Espaciado interno
+}
+
+.card .card-body {
+    height: 100%;
+}
+
+.card .card-body a {
+    position: absolute;
+    width: 80%;
+    bottom: 0%;
+}
+
+// Estilos responsivos para pantallas pequeñas
+@media(max-width:600px) {
+    .card {
+        width: 50%; // Ancho de las tarjetas reducido
+    }
+
+    .card .card-body p {
+        @include fuente(.8em); // Tamaño de fuente reducido
+    }
+}
+
+// Estilos para el pie de página
+footer {
+    padding: 1em;
+    border-radius: .3em;
+    background: $yellow; // Fondo amarillo definido por variable
+}
+
+footer a {
+    text-decoration: none;
+    color: $letrablanca; // Color de texto definido por variable
+}
+
+// Estilos para el formulario
+.formulario {
+    padding-bottom: 2em;
+}
+
+// Estilos para el espacio superior
+.spacebar {
+    padding-top: 5em;
+}
+
+// Estilos para los íconos dentro de las tablas
+table i {
+    color: rgba(252,163,17,1);
+}
+
+// Estilos para el botón de información
+#btn-inf {
+    position: fixed;
+    bottom: 18%;
+    right: .5%;
+}
+
+#btn-inf .btn-info {
+    @include tamaño(3em, 3em); // Tamaño del botón
+    border-radius: 40%; // Bordes redondeados
+    text-align: center; // Alineación del texto al centro
+}
+
+#btn-inf .btn-info i {
+    @include fuente(2em); // Tamaño de fuente del ícono
+}
+
+#btn-inf .btn-info:hover {
+    background: brown;
+    color: $letrablanca; // Color de texto definido por variable
+}
